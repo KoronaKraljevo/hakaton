@@ -1,0 +1,241 @@
+body{
+	font-size: 17px;
+	background: url("../img/background2.jpg") no-repeat center fixed;	
+	background-size:cover;
+	color:white;
+	margin: 0;
+	padding: 0;
+}
+h1 {
+	font-size: calc(7vh + 7vw);
+	font-family:'Luckiest Guy', cursive;
+}
+h2 {
+	font-family:'Luckiest Guy', cursive;
+	text-align:left;
+	font-size:3vw;
+}
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 60px;
+	height: 34px;
+  }
+  .switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+  }
+  .slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  .slider:before {
+	position: absolute;
+	content: "";
+	height: 26px;
+	width: 26px;
+	left: 4px;
+	bottom: 4px;
+	background-color: white;
+	-webkit-transition: .4s;
+	transition: .4s;
+  }
+  input:checked + .slider {
+	background-color: #2196F3;
+  }
+  input:focus + .slider {
+	box-shadow: 0 0 1px #2196F3;
+  }
+  input:checked + .slider:before {
+	-webkit-transform: translateX(26px);
+	-ms-transform: translateX(26px);
+	transform: translateX(26px);
+  }
+  .slider.round {
+	border-radius: 34px;
+  }
+  .slider.round:before {
+	border-radius: 50%;
+  }
+.font {
+	font-family:'Luckiest Guy', cursive;
+}
+.centerMenuButton {
+	display:none;
+}
+.flexboxRow {
+	display:flex;
+	position:relative;
+	flex-direction:row;
+}
+.navbarBorder {
+	 height: 20px;
+     width:2px;
+	 position:absolute;
+	 bottom:calc(50% - 10px);
+     background: #7f8c8d;
+}
+.notVisible {
+	visibility:hidden;
+}
+.navbarLink {
+	transition:0.3s;
+	font-size:1.1vw;
+}
+.navbarLink:hover {
+	transform:scale(1.08, 1.08);
+}
+.flexboxRow {
+    display:flex;
+    flex-direction:row;
+}
+.line {
+    border:1px solid black;
+    margin-left:10px;
+    margin-right:10px;
+}
+.avatarImage{
+	display: block;
+	margin: auto;
+	border-right: 1px solid white;
+}
+.avatarImage1{
+	display: block;
+	margin: auto;
+	border-left: 1px solid white;
+}
+.avatarText{
+	font-family: 'Alata',sans-serif;
+}
+.footerHeader {
+	font-family:'Luckiest Guy', cursive;
+	text-align:center;
+	font-size:1.75vw;
+}
+.footerLi {
+	display:flex;
+	justify-content:center;
+}
+.footerList {
+	text-align: center;
+	font-family:'Alata', sans-serif;
+	font-size:1vw;	
+}
+.footerPara {
+	font-size:1vw;
+	text-align:center;
+	width:100%;
+	margin:0;
+}
+.footerLink {
+	transition:0.3s;
+	color:#ecf0f1;
+}
+.footerLink:hover {
+	text-decoration:none;
+	color:#34495e;
+	transform:scale(1.1);
+}
+input[type = "email"] {
+	width:70%;
+	transition:0.3s;
+	border-radius:7px;
+	font-family: 'Alata',sans-serif; 
+	text-align: center;
+}
+input[type = "email"]:hover {
+	box-shadow:0 0 10px 3px #7f8c8d;
+}
+.footerUl {
+	list-style-type:none;
+	padding:0;
+}
+input[type = "submit"] {
+	margin-top:20px;
+	width:70%;
+	transition:0.3s;
+	border:none;
+	font-size:1.4vw;
+	background-color:#34495e;
+	color:#ecf0f1;
+	font-family:'Alata', sans-serif;
+	border-radius: 7px;
+}
+input[type = "submit"]:hover {
+	box-shadow:0 0 10px 2px;
+}
+input[type = "submit"]:active { 
+    transition:0s;
+	color:#34495e;
+	background-color:#ecf0f1;
+}
+footer {
+	margin-top:30px;
+	background-color:rgba(13, 13, 13,0.9);
+}
+@media only screen and (max-width: 1199px)
+{
+	.navbarLink {
+		font-size:3vw;
+	}
+	.centerMenuButton {
+		display:block;
+		display:flex;
+		justify-content:center;
+		width:100%;
+	}
+	h1{
+		text-align: center;
+	}
+	.pl-5{
+		padding-left: 0!important;
+	}
+}
+@media only screen and (max-width: 1100px)
+{
+	.avatarImage, .avatarImage1{
+		width: 90%;
+		height: auto;
+	}
+}
+@media only screen and (max-width: 991px)
+{
+	.center{
+		display: flex;
+		justify-content: center;
+	}
+	h2 {
+		font-size:40px;
+	}
+	.avatarImage{
+		width: 30%;
+		border: none;
+	}
+	.avatarImage1{
+		width: 30%;
+		border: none;
+	}
+}
+@media only screen and (max-width: 767px)
+{
+	.footerList, .footerPara, .footerLi, .footerLink {
+		font-size:3vw;
+	}
+	.footerHeader {
+		font-size:5vw;
+	}
+	.footerPara {
+		font-size:2.8vw;
+	}
+	input[type = "submit"] {
+		font-size:4vw;
+	}
+}
